@@ -75,6 +75,26 @@
                                             <segue destination="6Dv-K4-pEZ" kind="show" id="wIf-0s-2RK"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Rib-xv-K31" style="IBUITableViewCellStyleDefault" id="ai6-hU-CKh">
+                                        <rect key="frame" x="0.0" y="115" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ai6-hU-CKh" id="dlg-Sp-EAu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="CollectionView Layout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rib-xv-K31">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="J9G-4g-OKy" kind="show" id="lF6-1T-XEt"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -90,6 +110,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNJ-Wp-4vS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136" y="139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OY2-1B-1s1">
+            <objects>
+                <viewController id="J9G-4g-OKy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Kk-VP-ub0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0tr-fZ-NGn">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dqw-T0-kWs">
+                                    <size key="itemSize" width="102" height="101"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0tr-fZ-NGn" firstAttribute="top" secondItem="6wy-up-Nwj" secondAttribute="top" id="1Ha-Ol-4qG"/>
+                            <constraint firstItem="0tr-fZ-NGn" firstAttribute="trailing" secondItem="6wy-up-Nwj" secondAttribute="trailing" id="84h-8D-jKc"/>
+                            <constraint firstItem="0tr-fZ-NGn" firstAttribute="leading" secondItem="6wy-up-Nwj" secondAttribute="leading" id="E52-yI-lgc"/>
+                            <constraint firstItem="0tr-fZ-NGn" firstAttribute="bottom" secondItem="6wy-up-Nwj" secondAttribute="bottom" id="Oye-CY-B4d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6wy-up-Nwj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iop-QP-15X"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="brG-hZ-rph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="900.66964285714278"/>
         </scene>
         <!--SF Symbols Info-->
         <scene sceneID="Dz1-jF-B4u">
@@ -260,13 +315,13 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc.on.clipboard.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="63e-zc-YQF">
                                         <rect key="frame" x="0.0" y="-13" width="414" height="801"/>
-                                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large" weight="regular">
                                             <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         </preferredSymbolConfiguration>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="63e-zc-YQF" firstAttribute="top" secondItem="t38-o1-iTy" secondAttribute="top" id="1hm-Af-Evg"/>
                                     <constraint firstItem="63e-zc-YQF" firstAttribute="leading" secondItem="t38-o1-iTy" secondAttribute="leading" id="4u3-YD-w0L"/>
@@ -290,7 +345,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Symbol" id="Ej5-FF-wsI">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="fqZ-4f-NgB">
-                            <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

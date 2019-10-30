@@ -96,10 +96,18 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		A78F976323477E53008292B5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		A7AC589D232FB4DE008768A1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				A7400CE1232F985500789E82 /* RootTableViewController.swift */,
+				A78F976323477E53008292B5 /* New Group */,
 				A746F0252331011B00159412 /* Helpers */,
 				A746F0222330E07300159412 /* SFSymbols */,
 			);
